@@ -85,4 +85,3 @@ Keep generation briefs operational: state the single scene, subjects, action, co
 For a full inflation/central-bank-rate-hike test case, read [references/inflation-rate-hike-example.md](references/inflation-rate-hike-example.md). Use it when validating the skill or when a similar economics article needs a concrete model; do not copy its claims into unrelated work.
 
 When the user supplies a preferred visual reference, analyze its repeatable traits and, if asked to retain it, register the next three-digit number in [references/visual-styles.md](references/visual-styles.md). Never overwrite an existing numbered style unless the user explicitly asks to replace it.
-

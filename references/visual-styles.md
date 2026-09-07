@@ -28,4 +28,3 @@ Style 001 — Retro Bold-Line Editorial Cartoon. Use the supplied reference for 
 ```
 
 Retain the global Read & Teach constraints: exactly one generation call per image, one canvas, one scene, no Chinese body text, article page, screenshot, poster, infographic, long image, collage, panels, montage, contact sheet, or multiple variants.
-

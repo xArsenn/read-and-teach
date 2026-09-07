@@ -44,4 +44,3 @@ Apply **Style 001 — Retro Bold-Line Editorial Cartoon** from `visual-styles.md
 - Three insertion markers map one-to-one to three briefs.
 - The three images are generated in three separate calls and visually checked individually.
 - All images visibly follow Style 001; none uses the superseded soft pencil-and-watercolor default.
-
