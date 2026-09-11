@@ -38,9 +38,10 @@ Apply **Style 001 — Retro Bold-Line Editorial Cartoon** from `visual-styles.md
 
 ## Pass criteria
 
-- The article is at most 1,200 Chinese characters and can be understood without seeing the English input.
+- The article is between 950 and 1,300 Chinese characters and can be understood without seeing the English input.
 - It does not refer to “the original”, “the author”, or “this article”.
 - It integrates three full English sentences, six phrases, and at least six transferable words without creating a detached vocabulary list.
 - Three insertion markers map one-to-one to three briefs.
 - The three images are generated in three separate calls and visually checked individually.
 - All images visibly follow Style 001; none uses the superseded soft pencil-and-watercolor default.
+
