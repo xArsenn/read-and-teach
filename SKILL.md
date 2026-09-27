@@ -76,7 +76,7 @@ Choose one clear angle and express the article's central claim in one internal s
 
 ## Writing for clicks and completion
 
-- Keep the main body between 1,000 and 1,200 Chinese characters unless the user requests another length. Count the narrative and embedded English teaching from the first through final body paragraph; exclude the title, illustration markers, source list, image briefs, captions, and delivery notes.
+- Keep the main body at 1,200–1,300字 unless the user requests another length. Measure it by Chinese body-text word count (中文字数), not by raw character count. Count the narrative and embedded English teaching from the first through final body paragraph; exclude the title, illustration markers, source list, image briefs, captions, and delivery notes.
 - In the first 100–150 Chinese characters, introduce a concrete fact, scene, number, or change, then state the article's specific thesis early. Prefer a direct claim over a rhetorical question or meta-signposting such as “真正值得关注的不是……而是……”. Do not open with a grand background, generic reflection, dictionary definition, or delayed reveal.
 - Give every paragraph one clear job. Lead with its point, then add evidence, mechanism, or example. Adjacent paragraphs must have a visible causal, progressive, explanatory, or contrastive relationship.
 - Keep one central claim throughout. Remove facts that neither advance the reasoning nor improve understanding.
@@ -151,7 +151,7 @@ Keep generation briefs operational: state the single scene, subjects, action, co
 - [ ] One clear, evidence-supported claim connects the headline, opening, body, and ending.
 - [ ] The title creates an honest information gap, uses literally accurate nouns and verbs, and the article fully delivers on it.
 - [ ] The first 100–150 characters establish a concrete fact, reader relevance, and a source-specific thesis without formulaic meta-signposting.
-- [ ] The main body is independently understandable and 1,000–1,200 Chinese characters unless the user requested otherwise.
+- [ ] The main body is independently understandable and 1,200–1,300字 by Chinese body-text word count (中文字数), not raw character count, unless the user requested otherwise.
 - [ ] Facts, dates, numbers, modality, attribution, and causal claims remain accurate; key uncertainty and scope conditions are preserved.
 - [ ] Paragraphs have distinct jobs and clear logical links; the reverse outline reveals no repetition, digression, or missing bridge.
 - [ ] The Chinese is natural and specific, without translation framing, stock AI phrases, mechanical parallelism, or empty uplift.
