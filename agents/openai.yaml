@@ -1,4 +1,5 @@
 interface:
   display_name: "Read & Teach"
-  short_description: "Turn English articles into teachable Chinese WeChat posts"
-  default_prompt: "Use $read-and-teach to turn this English article into a concise Chinese WeChat post with integrated English learning and separate illustrations."
+  short_description: "Find or adapt safe English news into high-interest Chinese posts"
+  default_prompt: "Use $read-and-teach to find a timely, publication-safe English news story and create a high-interest Chinese WeChat article with integrated English learning and separate illustrations."
+
