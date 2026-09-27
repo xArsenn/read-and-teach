@@ -1,6 +1,6 @@
 ---
 name: read-and-teach
-description: Find a timely, non-political, publication-safe English news story when no source is supplied, or adapt an English article supplied by the user, then create a high-interest Chinese WeChat article with a distinct editorial angle, naturally embedded English learning, and 2–3 separate illustrations. Prioritize suitability for China's media environment and audience appeal before English-learning density. Do not use for literal translation, English-only study notes, or reading-card images.
+description: Find a timely, non-political, publication-safe English news story when no source is supplied, or adapt an English article supplied by the user, then create a high-interest Chinese WeChat article with a distinct editorial angle, naturally embedded English learning, one cover image, and three separate content illustrations. Prioritize suitability for China's media environment and audience appeal before English-learning density. Do not use for literal translation, English-only study notes, or reading-card images.
 ---
 
 # Read & Teach
@@ -71,7 +71,7 @@ Choose one clear angle and express the article's central claim in one internal s
 4. Build a coherent narrative around the new editorial angle. A useful default is: concrete change or scene → central claim → reason or mechanism → evidence or example → practical meaning → limits and uncertainty. Adapt the structure to the material rather than applying it mechanically.
 5. Explain difficult ideas in two layers: plain, accurate Chinese first; then the specialist term, mechanism, evidence, or boundary needed for precision.
 6. Integrate English close to the idea it expresses. Explain the Chinese meaning and only the usage detail that transfers to another context.
-7. Place 2–3 numbered illustration markers after paragraphs where a visual clarifies the idea or resets the reading rhythm, then generate each illustration separately.
+7. Place exactly three numbered content-illustration markers after paragraphs where a visual clarifies the idea or resets the reading rhythm. Create one separate cover image, then generate each of the three content illustrations separately.
 8. Run the headline-literalness, thesis-specificity, English-density, reverse-outline, source-placement, and image-delivery checks before delivery.
 
 ## Writing for clicks and completion
@@ -103,14 +103,15 @@ Choose one clear angle and express the article's central claim in one internal s
 
 ## Illustration hard rules
 
-- Produce 2–3 independent image files for one article.
-- **Every illustration must be executed as a separate image-generation task/call. One call may request exactly one image depicting exactly one scene.** Never ask one call to produce several images, panels, variants, or scenes.
+- Produce exactly four accepted image files for every article: one cover image and three content illustrations.
+- **Every image must be executed as a separate image-generation task/call. One call may request exactly one image depicting exactly one scene.** Use four separate calls in total: one for the cover, followed by one for each content illustration. Never ask one call to produce several images, panels, variants, or scenes.
 - One image equals one scene and one visual idea. Keep the composition simple and directly tied to the paragraph beside its marker.
-- Default to a horizontal composition suitable for a WeChat article. Unless the user names another registered style, use **Style 001 — Retro Bold-Line Editorial Cartoon**. Read [references/visual-styles.md](references/visual-styles.md) and use its reference asset and prompt recipe. Do not mix the former pencil, colored-pencil, or watercolor look into Style 001.
+- Make the cover a very wide horizontal composition near 2.35:1, with the essential subject inside the central safe area so WeChat cropping does not remove it. It must communicate the article's central idea at thumbnail size and must not depend on embedded title text.
+- Make each content illustration horizontal and suitable for insertion within a WeChat article. Unless the user names another registered style, use **Style 001 — Retro Bold-Line Editorial Cartoon** consistently across the cover and all three content images. Read [references/visual-styles.md](references/visual-styles.md) and use its reference asset and prompt recipe. Do not mix the former pencil, colored-pencil, or watercolor look into Style 001.
 - Use no text by default. If meaning would otherwise be lost, allow only a tiny amount of English or numerals.
 - Explicitly forbid in every generation brief: Chinese body text, article page, screenshot, poster, infographic, chart board, dashboard, arrows, flowchart, long image, collage, split panels, comic strip, contact sheet, multi-scene montage, and multiple variants in one canvas.
-- Inspect each result before generating the next image. Only accepted images count toward the promised 2–3 deliverables. If a draft must be shown, label it clearly as discarded so the user cannot mistake it for an extra final illustration.
-- Prepare accepted images for WeChat delivery: export as sRGB JPEG unless transparency is essential, resize to no more than 1080 pixels wide, target 500–800 KB and keep each file below 1 MB, and use short ASCII filenames. Verify the actual format, dimensions, color mode, and byte size after export.
+- Inspect each result before generating the next image. Only accepted images count toward the promised four deliverables. If a draft must be shown, label it clearly as discarded so the user cannot mistake it for an extra final image.
+- Prepare accepted images for WeChat delivery: export as sRGB JPEG unless transparency is essential, resize to no more than 1080 pixels wide, keep each file below 1 MB, and use short ASCII filenames. Use a cover filename ending in `-cover.jpg` and content filenames ending in `-01.jpg`, `-02.jpg`, and `-03.jpg`. Verify the actual format, dimensions, color mode, and byte size after export.
 - Do not place local filesystem image paths inside the reusable article body. Keep numbered insertion markers in the article and provide the accepted image files separately.
 - If image generation is unavailable, do not fake filenames or claim images were generated. Return the separate briefs, label them “待生成”, and explain the limitation.
 
@@ -121,19 +122,22 @@ Choose one clear angle and express the article's central claim in one internal s
 
 <采用新作者视角、可独立阅读的中文正文，英语学习内容自然嵌入>
 
+【封面图单独交付，不插入正文】
+
 【配图1建议插入位置】
 
 <后续正文>
 
 【配图2建议插入位置】
 
-<后续正文；需要时加入配图3标记>
+<后续正文；加入配图3标记>
 
 ## 配图
 
+0. 封面图：<已验收文件名、尺寸和大小，或“待生成”状态>。画面重点：<一句话说明>。
 1. 配图1：<已验收文件名、尺寸和大小，或“待生成”状态>。对应位置：<一句话说明>。
 2. 配图2：<已验收文件名、尺寸和大小，或“待生成”状态>。对应位置：<一句话说明>。
-3. 配图3：<如适用；已验收文件名、尺寸和大小>。
+3. 配图3：<已验收文件名、尺寸和大小，或“待生成”状态>。对应位置：<一句话说明>。
 
 ## 主要英文来源
 
@@ -156,9 +160,10 @@ Keep generation briefs operational: state the single scene, subjects, action, co
 - [ ] Paragraphs have distinct jobs and clear logical links; the reverse outline reveals no repetition, digression, or missing bridge.
 - [ ] The Chinese is natural and specific, without translation framing, stock AI phrases, mechanical parallelism, or empty uplift.
 - [ ] Normally 1–2 English sentences and 3–5 total learning items are useful, correctly explained, selectively emphasized, and naturally placed.
-- [ ] There are 2–3 numbered markers, each mapped to one separately generated single-scene image.
+- [ ] There are exactly three numbered content markers, each mapped to one separately generated single-scene image.
+- [ ] One additional cover image was generated separately; it communicates the central idea at thumbnail size, uses a near-2.35:1 composition, and keeps the essential subject in the central safe area.
 - [ ] Images contain no Chinese body text and are not article pages, screenshots, posters, infographics, long images, collages, or multi-panel layouts.
-- [ ] Delivered image files were visually checked against their briefs; discarded drafts are not presented as final illustrations.
+- [ ] All four delivered image files were visually checked against their briefs; discarded drafts are not presented as final images.
 - [ ] Accepted WeChat images are sRGB JPEGs, no wider than 1080 pixels, below 1 MB, and use short ASCII filenames; format, dimensions, color mode, and size were verified.
 - [ ] The registered illustration style is stated; the default is Style 001.
 - [ ] Main English sources include title, publisher or institution, date, and link at the end; raw URLs do not interrupt the body.
